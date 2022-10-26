@@ -3,8 +3,15 @@
 
 {% block content %}
 
+<style>
+    .img {
+        width: 300px;
+        height: 300px;
+    }
+</style>
+
 <h1>{{ post.title }}</h1>
-<img src="{{ post.img_url }}" alt="" srcset="">
+<img class="img" src="{{ post.img_url }}" alt="" srcset="">
 <p>{{ post.body }}</p>
 
 
